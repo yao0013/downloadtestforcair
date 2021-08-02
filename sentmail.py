@@ -24,5 +24,5 @@ def mailsent(subjects,contents):
     finally:
         s.quit()
 
-    if __name__ == '__main__':
-        mailsent("good job")
+    # if __name__ == '__main__':
+    #     mailsent("good job")
