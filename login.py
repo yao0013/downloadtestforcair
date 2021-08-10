@@ -9,12 +9,9 @@ def logincair():
     'Accept-Language': 'zh-CN,zh;q=0.9', 'Content-Type': 'application/json;charset=UTF-8'
     }
     res = requests.post(url=urls, json=json, headers=headers)
-    # return re.text
-    # print(res.text)
     res1 = res.text
 
     actoken = re.findall(r'"role":"admin","token":"(.*)"},"timestamp"',res1)
-    # print(actoken)
     ak1 = actoken[0]
     return (ak1)
 
