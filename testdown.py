@@ -7,9 +7,9 @@ import login
 
 if __name__ == '__main__':
 
-    ac = login.logincair()
+    # ac = login.logincair()
 
-    url = "https://cair.cambricon.com/sharecloud-boot/file/tarball_download?id=NVp1OTU3MlI1TGlBNXB5ZkxuSndiUT09&editionId=78ed2ef67a612c34024883b154bf3367&accessToken=%s"%(ac)
+    url = "https://cair.cambricon.com/sharecloud-boot/file/tarball_download?id=NVp1OTU3MlI1TGlBNXB5ZkxuSndiUT09&editionId=78ed2ef67a612c34024883b154bf3367&apiToken=gcloud123"
     download_from_url(url, "国网一期.rpm")
     file_name = "国网一期.rpm"
 

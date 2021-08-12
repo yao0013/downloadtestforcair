@@ -11,9 +11,9 @@ def logincair():
     res = requests.post(url=urls, json=json, headers=headers)
     res1 = res.text
 
-    actoken = re.findall(r'"role":"admin","token":"(.*)"},"timestamp"',res1)
-    ak1 = actoken[0]
-    return (ak1)
+    # actoken = re.findall(r'"role":"admin","token":"(.*)"},"timestamp"',res1)
+    # ak1 = actoken[0]
+    return (res1)
 
 if __name__ == '__main__':
     ac = logincair()
